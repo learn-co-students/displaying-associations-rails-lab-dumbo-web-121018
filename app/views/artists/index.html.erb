@@ -1,0 +1,13 @@
+
+
+<h1>artists of westereos</h1>
+
+<%@artists.each do |artist|%>
+		<%= link_to artist.name, artist %>(<%= artist.songs.count%> songs)<br>
+	<% end %>
+
+
+
+
+
+<%= link_to 'Create Your artist', new_artist_path %>
